@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import {NgxTinySliderSettingsInterface} from 'ngx-tiny-slider';
 
 import * as bsn from '../../assets/styles/bootstrap-native-v4';
@@ -8,12 +8,12 @@ import * as bsn from '../../assets/styles/bootstrap-native-v4';
 	templateUrl: './app-shell.component.html',
 	styleUrls: ['./app-shell.component.css']
 })
-export class AppShellComponent implements OnInit {
+export class AppShellComponent implements AfterViewInit {
 
 	constructor() { }
 	tinySliderConfig: NgxTinySliderSettingsInterface;
 
-	ngOnInit() {
+	ngAfterViewInit() {
 		// this.tinySliderConfig = {
 		// 	arrowKeys: true,
 		// 	autoWidth: true,
