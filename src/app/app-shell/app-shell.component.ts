@@ -8,24 +8,30 @@ import * as bsn from '../../assets/styles/bootstrap-native-v4';
 	templateUrl: './app-shell.component.html',
 	styleUrls: ['./app-shell.component.css']
 })
-export class AppShellComponent implements AfterViewInit {
+export class AppShellComponent implements OnInit {
 
 	constructor() { }
-	tinySliderConfig: NgxTinySliderSettingsInterface;
+	
 
 	@ViewChild('carousel') slider:ElementRef;
+	tinySliderConfig: NgxTinySliderSettingsInterface;
 
-	ngAfterViewInit() {
-		// this.tinySliderConfig = {
-		// 	arrowKeys: true,
-		// 	autoWidth: true,
-		// 	gutter: 10,
-		// 	controlsText: ['<', '>'],
-		// 	items: 2,
-		// 	mouseDrag: true,
-		// 	navAsThumbnails: true
+
+
+	ngOnInit() {
+	// 	this.tinySliderConfig = {
+	// 		arrowKeys: true,
+	// 		autoWidth: true,
+	// 		gutter: 10,
+	// 		controlsText: ['<', '>'],
+	// 		items: 2,
+	// 		mouseDrag: true,
+	// 		navAsThumbnails: true
 			
-		// };
+	// 	};
+
+		//console.log(this.slider.nativeElement);
+		let carousel = this.slider.nativeElement as HTMLElement;
 
 		this.tinySliderConfig = {
 			arrowKeys: true,
@@ -33,7 +39,7 @@ export class AppShellComponent implements AfterViewInit {
 			gutter: 10,
 			controlsText: ['<', '>'],
 			mouseDrag: true,
-			container: "#customize",
+			container: carousel,
 			items: 3,
 			controlsContainer: "#customize-controls",
 			navContainer: "#customize-thumbnails",
