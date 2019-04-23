@@ -1,0 +1,15 @@
+AppShellComponent.html:23 ERROR TypeError: Cannot read property 'length' of undefined
+    at tns (tiny-slider.js:166)
+    at NgxTinySliderService.push../node_modules/ngx-tiny-slider/fesm5/ngx-tiny-slider.js.NgxTinySliderService.initSlider (ngx-tiny-slider.js:27)
+    at NgxTinySliderComponent.push../node_modules/ngx-tiny-slider/fesm5/ngx-tiny-slider.js.NgxTinySliderComponent.initSlider (ngx-tiny-slider.js:131)
+    at NgxTinySliderComponent.push../node_modules/ngx-tiny-slider/fesm5/ngx-tiny-slider.js.NgxTinySliderComponent.ngOnInit (ngx-tiny-slider.js:79)
+    at checkAndUpdateDirectiveInline (core.js:22099)
+    at checkAndUpdateNodeInline (core.js:23363)
+    at checkAndUpdateNode (core.js:23325)
+    at debugCheckAndUpdateNode (core.js:23959)
+    at debugCheckDirectivesFn (core.js:23919)
+    at Object.eval [as updateDirectives] (AppShellComponent.html:23)
+View_AppShellComponent_0 @ AppShellComponent.html:23
+AppShellComponent.html:23 ERROR CONTEXT DebugContext_component: (...)componentRenderElement: (...)context: (...)elDef: {nodeIndex: 11, parent: null, renderParent: null, bindingIndex: 0, outputIndex: 0, …}elOrCompView: (...)elView: {def: {…}, parent: {…}, viewContainerParent: null, parentNodeDef: {…}, context: AppShellComponent, …}injector: (...)nodeDef: {nodeIndex: 12, parent: {…}, renderParent: {…}, bindingIndex: 0, outputIndex: 0, …}nodeIndex: 12providerTokens: (...)references: (...)renderNode: (...)view: component: AppShellComponent {browse: {…}, slider: NgxTinySliderComponent, tinySliderConfig: {…}}context: AppShellComponent {browse: {…}, slider: NgxTinySliderComponent, tinySliderConfig: {…}}def: {factory: ƒ, nodeFlags: 436453379, rootNodeFlags: 436207617, nodeMatchedQueries: 2, flags: 0, …}disposables: nullinitIndex: -1nodes: (29) [QueryList, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}, {…}]oldValues: [{…}]parent: {def: {…}, parent: {…}, viewContainerParent: null, parentNodeDef: {…}, context: AppComponent, …}parentNodeDef: {nodeIndex: 1, parent: {…}, renderParent: {…}, bindingIndex: 0, outputIndex: 0, …}renderer: DebugRenderer2 {delegate: EmulatedEncapsulationDomRenderer2, debugContextFactory: ƒ, data: {…}}root: {ngModule: NgModuleRef_, injector: NullInjector, projectableNodes: Array(0), selectorOrNode: "app-root", sanitizer: DomSanitizerImpl, …}state: 1036viewContainerParent: null__proto__: Object__proto__: Object
+View_AppShellComponent_0 @ AppShellComponent.html:23
+core.js:16829 Angular is running in the development mode. Call enableProdMode() to enable the production mode.
