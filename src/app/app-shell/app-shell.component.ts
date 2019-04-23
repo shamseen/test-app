@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
 import {NgxTinySliderSettingsInterface} from 'ngx-tiny-slider';
 
 import * as bsn from '../../assets/styles/bootstrap-native-v4';
@@ -12,6 +12,8 @@ export class AppShellComponent implements AfterViewInit {
 
 	constructor() { }
 	tinySliderConfig: NgxTinySliderSettingsInterface;
+
+	@ViewChild('carousel') slider:ElementRef;
 
 	ngAfterViewInit() {
 		// this.tinySliderConfig = {
