@@ -14,34 +14,34 @@ export class AppShellComponent implements OnInit {
 	tinySliderConfig: NgxTinySliderSettingsInterface;
 
 	ngOnInit() {
-		this.tinySliderConfig = {
-			arrowKeys: true,
-			autoWidth: true,
-			gutter: 10,
-			controlsText: ['<', '>'],
-			items: 2,
-			mouseDrag: true,
-			navAsThumbnails: true
-			
-		};
-
 		// this.tinySliderConfig = {
 		// 	arrowKeys: true,
 		// 	autoWidth: true,
 		// 	gutter: 10,
 		// 	controlsText: ['<', '>'],
+		// 	items: 2,
 		// 	mouseDrag: true,
-		// 	container: "#customize",
-		// 	items: 3,
-		// 	controlsContainer: "#customize-controls",
-		// 	navContainer: "#customize-thumbnails",
-		// 	navAsThumbnails: true,
-		// 	autoplay: true,
-		// 	autoplayTimeout: 1000,
-		// 	autoplayButton: "#customize-toggle",
-		// 	swipeAngle: false,
-		// 	speed: 400
+		// 	navAsThumbnails: true
+			
 		// };
+
+		this.tinySliderConfig = {
+			arrowKeys: true,
+			autoWidth: true,
+			gutter: 10,
+			controlsText: ['<', '>'],
+			mouseDrag: true,
+			container: "#customize",
+			items: 3,
+			controlsContainer: "#customize-controls",
+			navContainer: "#customize-thumbnails",
+			navAsThumbnails: true,
+			autoplay: true,
+			autoplayTimeout: 1000,
+			autoplayButton: "#customize-toggle",
+			swipeAngle: false,
+			speed: 400
+		};
 	}
 
 	browse = {
